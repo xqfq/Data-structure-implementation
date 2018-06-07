@@ -1,4 +1,4 @@
-# Data-structure-implementation
+# Data structure implementation
 ## Practice data structure implementation using python
 
 ## Description
