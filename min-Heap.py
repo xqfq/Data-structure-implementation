@@ -4,7 +4,7 @@ class minHeap:
         self.currentSize = 0 
 
     def __repr__(self): 
-        return str(self.heapList) 
+        return self.heapList
 
     def percUp(self,i): 
         ''' 
