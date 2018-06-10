@@ -4,10 +4,14 @@
 2. min-Heap
 ## Stack
 ### Description
-An ordered data structure where the addition and the removal of items takes place at the top. Implements expandable stack va doubling the size the the existing stack
+An ordered data structure where the addition and the removal of items takes place at the top. Implements expandable stack via doubling the size the the existing stack
 ### Test
 @Stack_test.py
 ### Application
+### Complexity analysis
+Amortized analysis: 
+T(n) = n + c + 2c + ... + n/c*c = n + c * (1 + 2 + ... + n/c) = n+ c * (1 + n/c) * n/c * 1/2 = O(n^2)
+T(n)/n = O(n)
 
 
 ### Complexity analysis
