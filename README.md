@@ -9,8 +9,8 @@ An ordered data structure where the addition and the removal of items takes plac
 @Stack_test.py
 ### Application
 ### Complexity analysis
-Amortized analysis: 
-T(n) = n + c + 2c + ... + n/c*c = n + c * (1 + 2 + ... + n/c) = n+ c * (1 + n/c) * n/c * 1/2 = O(n^2)
+Amortized analysis:\
+T(n) = n + c + 2c + ... + n/c*c = n + c * (1 + 2 + ... + n/c) = n+ c * (1 + n/c) * n/c * 1/2 = O(n^2)\
 T(n)/n = O(n)
 
 
