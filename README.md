@@ -26,12 +26,10 @@ FIFO ordered data structure
 ### Complexity analysis
 
 
-### Complexity analysis
 ## Min-Heap
 ### Description
 Min-Heap is a tree-based data structure that satisfies the heap property, i.e. all nodes are less than or equal of its children
 ### Test
 ### Application
 1. Priority queue
-
 ### Complexity analysis
