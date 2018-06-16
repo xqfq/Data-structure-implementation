@@ -5,7 +5,7 @@ class Stack:
     '''
     def __init__(self,cap):
         self.cap = cap
-        self.stackList = [0] * cap
+        self.stackList = [None] * cap
         self.stackLen = 0
     def __repr__(self):
         return str(self.stackList)
@@ -20,7 +20,7 @@ class Stack:
         else:
             # double the stack when full
             self.cap = self.cap * 2
-            self.stackList_new =  [0] * self.cap
+            self.stackList_new =  [None] * self.cap
             for i in range(self.stackLen):
                 self.stackList_new[i] = self.stackList[i]
             self.stackList_new[self.stackLen] = item
@@ -32,7 +32,7 @@ class Stack:
         '''
         self.stackLen -= 1
         last=self.stackList[self.stackLen]
-        self.stackList[self.stackLen]=0
+        self.stackList[self.stackLen]=None
         return last
     def size(self):
         '''
