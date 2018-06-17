@@ -1,3 +1,6 @@
+# Implement a stack backed by the linked List
+# Include iterator
+
 class Node:
     def __init__(self):
         # consists of an item and a reference to the next node
@@ -7,6 +10,16 @@ class LinkedStack:
     def __init__(self):
         self.first = None
         self.len = 0
+    def __iter__(self):
+        self.current = self.first
+        return self
+    def __next__(self):
+        if self.current != None:
+            item = self.current.item
+            self.current = self.current.next
+            return(item)
+        else:
+            raise StopIteration('The last element in the queue has been reached.')
     def isEmpty(self):
         return self.len == 0
     def size(self):
@@ -29,4 +42,3 @@ class LinkedStack:
             return oldFirst.item
         else:
             print('The stack is empty.')
-            pass
